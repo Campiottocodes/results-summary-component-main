@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+
+
+:root {
+    --Light-red: hsl(0, 100%, 67%, 0.1);
+    --Orangey-yellow: hsl(39, 100%, 56%, 0.1);
+    --Green-teal: hsl(166, 100%, 37%, 0.1);
+    --Cobalt-blue: hsl(234, 85%, 45%, 0.1);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    
+    background-color: var(--Pale-blue);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: var(--White);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.box {
+    display: flex;
+  height: 20rem;
+  width: 30rem;
+   border-radius: 5%;
+  
+  box-shadow: 20px 20px 15px var(--Pale-blue);
+}
+
+
+.box-purple {
+    display: flex;  
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue)); 
+    width: 50%;
+    border-radius: 5%;
+    
+
+}
+
+h3 {
+    position: absolute;
+    display: flex;
+    color: var(--Light-lavender);
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    
+}
+ .circle {
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    width: 9rem;
+    height:  9rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 3.5rem;
+    background: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
+        
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--White);
+    margin-right: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.circle p{
+    color: var(--Light-lavender);
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3.5rem;    
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13rem;
+    color: var(--White);
+}
+
+.info h1{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.info p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 1.6rem 0 1.6rem;
+    white-space: wrap;
+}
+
+.white-box {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 6%;
+    float: right;
+    max-width: 240px;
+    max-height: 320px;
+    
+ 
+}
+
+h2 {
+  display: flex;
+  position: absolute;
+  width: 15rem;
+  flex-direction: column;
+  text-align:justify;
+  margin-bottom: 16rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  
+      
+}
+
+.king-box {
+    display: block;
+    height: 13rem;
+    margin: 3.5rem 0rem 0 0;
+    font-size: 85%;
+}
+
+.summ-box {
+    display: flex;
+    width: 12rem;
+    height: 2.3rem;
+    border-radius: 5%;
+    margin-bottom: 0.6rem;
+    
+   align-items: center;
+}
+
+img {
+    width: 1.1rem;
+    margin: 0.5rem;
+    
+}
+
+ 
+.reaction {
+    background-color: var(--Light-red);
+      
+}
+.memory {
+    background-color: var(--Orangey-yellow);
+    
+ 
+}
+.verbal {
+    background-color: var(--Green-teal);
+   
+}
+.visual {
+    background-color: var(--Light-lavender);
+    
+}
+.reaction .left p{
+    color: hsl(0, 100%, 67%);
+}
+.memory .left p {
+   color: hsl(39, 100%, 56%);
+}
+.verbal .left p{
+    color: hsl(166, 100%, 37%);
+}
+.visual .left p {
+    color: hsl(234, 85%, 45%);
+}
+.right {
+    text-align: right;
+    display: flex;
+  
+    float: right;
+    position: absolute;
+    margin-left: 8rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(224, 30%, 27%);
+    height: 2.3rem;
+    width: 12rem;
+    border-radius: 20px;
+    color: var(--White);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue)); 
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        align-items: flex-start;
+        background-color: white;
+}
+.box {
+    box-shadow: none;
+    flex-direction: column;
+}
+
+.box-purple {
+    width: 100%;
+}
+.white-box .king-box {
+    width: 100%;
+}
+
+.summ-box{
+    width: 100%;
+}
+
+}
